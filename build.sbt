@@ -6,16 +6,16 @@ name := "learning-spark-examples"
 
 version := "0.0.1"
 
-scalaVersion := "2.10.4"
+scalaVersion := "2.11.8"
 
-javacOptions ++= Seq("-source", "1.7", "-target", "1.7")
+javacOptions ++= Seq("-source", "1.8", "-target", "1.7")
 
 // protocol buffer support
 seq(sbtprotobuf.ProtobufPlugin.protobufSettings: _*)
 
 // additional libraries
 libraryDependencies ++= Seq(
-  "org.apache.spark" %% "spark-core" % "1.3.1" % "provided",
+  "org.apache.spark" %% "spark-core" % "2.1.1" % "provided",
   "org.apache.spark" %% "spark-sql" % "1.3.1",
   "org.apache.spark" %% "spark-hive" % "1.3.1",
   "org.apache.spark" %% "spark-streaming" % "1.3.1",
