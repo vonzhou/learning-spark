@@ -19,3 +19,4 @@ mini-complete-example/sbt/*.jar
 
 #ignore the metastore
 metastore_db/*
+.idea
